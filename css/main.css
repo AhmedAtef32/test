@@ -96,3 +96,229 @@ nav {
   border-bottom: none;
   border-left: none;
 }
+=======
+:root{
+    --main-color:#0078FF;
+    --white-color:white;
+    --body-color:#F5F5F5;
+    --background-ffff:#fff;
+    --padding-top: 50px;
+    --p-color:rgb(78, 78, 78);
+    --span-color:rgb(30, 30, 30);
+    --progress-color: #0d6dfd3e;
+    --bg-footer:#0062D3;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--body-color);
+}
+html , body {
+    scroll-behavior: smooth;
+}
+
+
+
+/* start hedaer  */
+.header{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ) ,url(../imgs/hero-bg.jpg);
+    background-attachment:fixed ;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header-content h1{
+    font-size: 3rem;
+}
+.header-content h2::after{
+    content: "";
+    animation: typing 20s infinite  , border-animation 20s infinite;
+    border-right: 4px solid white;
+    color: var(--white-color);
+    transition: 0.2 ease all;
+    padding-right: 5px;
+    font-size: 1.5rem;
+
+    }
+
+    @keyframes border-animation{
+        0%{border-right: 4px solid white;}
+        10.674318507891%{border-right: 4px solid white;}
+        11.8507890961263%{border-right: 4px solid rgba(255, 255, 255, 0.2);}
+        13.0272596843615%{border-right: 4px solid white;}
+        14.2037302725968%{border-right: 4px solid rgba(255, 255, 255, 0.2);}
+        15.3802008608321%{border-right: 4px solid white;}
+        35.3802008608321%{border-right: 4px solid white;}
+        36.5566714490674%{border-right: 4px solid rgba(255, 255, 255, 0.2);}
+        37.7331420373027%{border-right: 4px solid white;}
+        38.909612625538%{border-right: 4px solid rgba(255, 255, 255, 0.2);}
+        40.0860832137733%{border-right: 4px solid white;}
+        63.6154949784793%{border-right: 4px solid white;}
+        64.7919655667146%{border-right: 4px solid rgba(255, 255, 255, 0.2);}
+        65.9684361549498%{border-right: 4px solid white;}
+        88.3213773314204%{border-right: 4px solid white;}
+        89.4978479196556%{border-right: 4px solid rgba(255, 255, 255, 0.2);}
+        90.6743185078909%{border-right: 4px solid white;}
+        91.8507890961262%{border-right: 4px solid rgba(255, 255, 255, 0.2);}
+        93.0272596843615%{border-right: 4px solid white;}
+        101.262553802009%{border-right: 4px solid white;}
+
+
+
+    }
+    @keyframes typing{
+        0%{content: "";}
+        1.21951219512195%{content: "D";}
+        2.4390243902439%{content: "D";}
+        3.6154949784792%{content: "De";}
+        4.79196556671449%{content: "Dev";}
+        5.96843615494979%{content: "Devo";}
+        7.14490674318508%{content: "Devol";}
+        8.32137733142037%{content: "Devolo";}
+        9.49784791965567%{content: "Devolop";}
+        10.674318507891%{content: "Devolope";}
+        11.8507890961263%{content: "Devoloper";}
+        13.0272596843615%{content: "Devoloper";}
+        14.2037302725968%{content: "Devoloper";}
+        15.3802008608321%{content: "Devolope";}
+        16.5566714490674%{content: "Devolop";}
+        17.7331420373027%{content: "Devolo";}
+        18.909612625538%{content: "Devol";}
+        20.0860832137733%{content: "Devo";}
+        21.2625538020086%{content: "Dev";}
+        22.4390243902439%{content: "De";}
+        23.6154949784792%{content: "D";}
+        24.7919655667145%{content: "";}
+        25.9684361549498%{content: "F";}
+        27.1449067431851%{content: "Fr";}
+        28.3213773314204%{content: "Fre";}
+        29.4978479196557%{content: "Free";}
+        30.674318507891%{content: "Freel";}
+        31.8507890961262%{content: "Freela";}
+        33.0272596843615%{content: "Freelan";}
+        34.2037302725968%{content: "Freelanc";}
+        35.3802008608321%{content: "Freelance";}
+        36.5566714490674%{content: "Freelancer";}
+        37.7331420373027%{content: "Freelancer";}
+        38.909612625538%{content: "Freelancer";}
+        40.0860832137733%{content: "Freelance";}
+        41.2625538020086%{content: "Freelanc";}
+        42.4390243902439%{content: "Freelan";}
+        43.6154949784792%{content: "Freela";}
+        44.7919655667145%{content: "Freel";}
+        45.9684361549498%{content: "Free";}
+        47.1449067431851%{content: "Fre";}
+        48.3213773314204%{content: "Fr";}
+        49.4978479196557%{content: "F";}
+        50.674318507891%{content: "";}
+        51.8507890961263%{content: "P";}
+        53.0272596843616%{content: "Ph";}
+        54.2037302725969%{content: "Pho";}
+        55.3802008608322%{content: "Phot";}
+        56.5566714490675%{content: "Photo";}
+        57.7331420373028%{content: "Photog";}
+        58.9096126255381%{content: "Photogr";}
+        60.0860832137734%{content: "Photogra";}
+        61.2625538020087%{content: "Photograp";}
+        62.439024390244%{content: "Photograph";}
+        63.6154949784793%{content: "Photographe";}
+        64.7919655667146%{content: "Photographer";}
+        65.9684361549498%{content: "Photographer";}
+        67.1449067431851%{content: "Photographe";}
+        68.3213773314204%{content: "Photograph";}
+        69.4978479196557%{content: "Photograp";}
+        70.674318507891%{content: "Photogra";}
+        71.8507890961263%{content: "Photogr";}
+        73.0272596843616%{content: "Photog";}
+        74.2037302725969%{content: "Photo";}
+        75.3802008608322%{content: "Phot";}
+        76.5566714490675%{content: "Pho";}
+        77.7331420373027%{content: "Ph";}
+        78.909612625538%{content: "P";}
+        80.0860832137733%{content: "";}
+        81.2625538020086%{content: "D";}
+        82.4390243902439%{content: "De";}
+        83.6154949784792%{content: "Des";}
+        84.7919655667145%{content: "Desi";}
+        85.9684361549498%{content: "Desig";}
+        87.1449067431851%{content: "Design";}
+        88.3213773314204%{content: "Designe";}
+        89.4978479196556%{content: "Designer";}
+        90.6743185078909%{content: "Designer";}
+        91.8507890961262%{content: "Designer";}
+        93.0272596843615%{content: "Designe";}
+        94.2037302725968%{content: "Design";}
+        95.3802008608321%{content: "Desig";}
+        96.5566714490674%{content: "Desi";}
+        97.7331420373027%{content: "Des";}
+        98.909612625538%{content: "De";}
+        100.086083213773%{content: "D";}
+        101.262553802009%{content: "";}
+        
+     
+    }
+/* end hedaer  */
+
+
+/* start About section  */
+.about-section{
+    padding-top: var(--padding-top);
+}
+.About-portfolio{
+    background-color:  var( --background-ffff);
+}
+
+.About-info h3{
+    color: var(--p-color);
+    font-weight: 400;
+    font-size: 1rem;
+    
+}
+.About-info h3 span{
+    color: var(--span-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+    
+}
+.About-skils h2{
+    color: var(--span-color);
+    font-size: 1.2rem;
+}
+.About-progress h5{
+ color: var(--p-color);
+ font-size: 1rem;
+}
+.my-progress-color{
+background-color: var(--progress-color);
+}
+.progress, .progress-stacked {
+    height: 12px;
+}
+
+.head-of-every-sec{
+    font-size: 2rem;
+    color: var(--span-color);
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 50px;
+}
+.head-of-every-sec::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: var(--main-color);
+    top: 120%;
+    transition: 0.2s ease all;
+}
+
+.second-About-content p{
+font-size: 1.25rem;
+color: var(--p-color);
+font-weight: 300;
+
+}
+
+
+/
