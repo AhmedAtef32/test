@@ -1,3 +1,102 @@
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: black;
+  background-color: transparent;
+}
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.navbar-collapse {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.icon {
+  font-size: 13px;
+}
+nav {
+  text-transform: uppercase;
+  z-index: 555;
+}
+.navbar {
+  background: rgba(0, 0, 0, 0.9);
+}
+.nav-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: white;
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: white;
+  background-color: transparent;
+}
+.nav-pills .nav-link.active {
+  position: relative;
+}
+/* .nav-pills .nav-link.active::after {
+    content: "";
+    position: absolute;
+    background-color:white;
+    width: 80%;
+    height: 5px;
+    top: 100%;
+    left: 10%;
+} */
+
+.nav-pills .nav-link.active::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 56%;
+  height: 3px;
+  top: 100%;
+  left: 18%;
+}
+
+.nav-pills .nav-link {
+  position: relative;
+}
+.nav-pills .nav-link::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 0;
+  height: 5px;
+  top: 100%;
+  left: 10%;
+  transition: all 0.5s ease;
+}
+.nav-pills .nav-link:hover::after {
+  width: 80%;
+}
+
+.dropdown-toggle::after {
+  /* display: inline-block; */
+  margin-left: 0;
+  vertical-align: 0;
+  content: "";
+  border-top: 0;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+=======
 :root{
     --main-color:#0078FF;
     --white-color:white;
@@ -222,4 +321,4 @@ font-weight: 300;
 }
 
 
-/* end About section  */
+/
