@@ -118,8 +118,8 @@ html , body {
 
 
 /* start hedaer  */
-.header{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ) ,url(../imgs/hero-bg.jpg);
+.header-content{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ) ,url('../imgs/hero-bg.jpg');
     background-attachment:fixed ;
     background-position: center;
     background-size: cover;
